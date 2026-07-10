@@ -1,0 +1,218 @@
+// ================= NAV ITEMS =================
+export const NAV_ITEMS = {
+  tenant: ["Search", "Bookings", "Payments", "Complaints", "Roommates", "Profile"],
+  landlord: ["Dashboard", "Properties", "Tenants", "Payments", "Complaints", "Analytics"],
+  admin: ["Dashboard", "Users", "Properties", "Reports", "Security", "Settings"],
+};
+
+// ================= COLORS =================
+export const COLORS = {
+  primary: "#1a1a2e",
+  accent: "#e94560",
+  gold: "#f5a623",
+  teal: "#00b4d8",
+  bg: "#f8f9fc",
+  card: "#ffffff",
+  muted: "#6b7280",
+  border: "#e5e7eb",
+  success: "#10b981",
+  warning: "#f59e0b",
+  danger: "#ef4444",
+};
+
+// ================= MOCK PROPERTIES =================
+export const MOCK_PROPERTIES = [
+  {
+    id: 1,
+    title: "Modern 2BHK in Vijay Nagar",
+    price: 18000,
+    location: "Vijay Nagar, Indore",
+    bhk: 2,
+    area: 950,
+    type: "Apartment",
+    furnished: "Semi",
+    rating: 4.5,
+    reviews: 12,
+    verified: true,
+    available: true,
+    amenities: ["AC", "Parking", "WiFi", "Gym"],
+    img: "🏢",
+  },
+  {
+    id: 2,
+    title: "Spacious 3BHK Villa",
+    price: 35000,
+    location: "Scheme 54, Indore",
+    bhk: 3,
+    area: 1800,
+    type: "Villa",
+    furnished: "Fully",
+    rating: 4.8,
+    reviews: 8,
+    verified: true,
+    available: true,
+    amenities: ["AC", "Parking", "WiFi", "Garden", "Pool"],
+    img: "🏡",
+  },
+  {
+    id: 3,
+    title: "1BHK Studio Near IT Park",
+    price: 12000,
+    location: "Palasia, Indore",
+    bhk: 1,
+    area: 500,
+    type: "Studio",
+    furnished: "Fully",
+    rating: 4.2,
+    reviews: 20,
+    verified: true,
+    available: false,
+    amenities: ["AC", "WiFi"],
+    img: "🏠",
+  },
+  {
+    id: 4,
+    title: "PG for Working Professionals",
+    price: 8000,
+    location: "Nipania, Indore",
+    bhk: 1,
+    area: 200,
+    type: "PG",
+    furnished: "Fully",
+    rating: 3.9,
+    reviews: 35,
+    verified: false,
+    available: true,
+    amenities: ["WiFi", "Meals", "Laundry"],
+    img: "🏘",
+  },
+  {
+    id: 5,
+    title: "Luxury 4BHK Penthouse",
+    price: 75000,
+    location: "Bypass Road, Indore",
+    bhk: 4,
+    area: 3200,
+    type: "Penthouse",
+    furnished: "Fully",
+    rating: 4.9,
+    reviews: 5,
+    verified: true,
+    available: true,
+    amenities: ["AC", "Parking", "WiFi", "Pool", "Gym", "Theater"],
+    img: "🏰",
+  },
+  {
+    id: 6,
+    title: "Cozy 2BHK Near School",
+    price: 15000,
+    location: "Sudama Nagar, Indore",
+    bhk: 2,
+    area: 850,
+    type: "Apartment",
+    furnished: "Semi",
+    rating: 4.0,
+    reviews: 18,
+    verified: true,
+    available: true,
+    amenities: ["Parking", "WiFi"],
+    img: "🏗",
+  },
+];
+
+// ================= CHART DATA =================
+export const CHART_DATA = {
+  earnings: [42000, 38000, 55000, 61000, 48000, 70000],
+  months: ["Jan", "Feb", "Mar", "Apr", "May", "Jun"],
+  occupancy: 87,
+  pending: 3,
+  totalTenants: 8,
+  revenue: 245000,
+};
+
+// ================= COMPLAINTS =================
+export const COMPLAINTS = [
+  {
+    id: 1,
+    tenant: "Rahul Sharma",
+    property: "2BHK Vijay Nagar",
+    issue: "AC not working",
+    status: "pending",
+    date: "2024-01-15",
+    priority: "high",
+  },
+  {
+    id: 2,
+    tenant: "Priya Patel",
+    property: "3BHK Villa",
+    issue: "Water leakage in bathroom",
+    status: "in-progress",
+    date: "2024-01-12",
+    priority: "medium",
+  },
+  {
+    id: 3,
+    tenant: "Amit Kumar",
+    property: "Studio Palasia",
+    issue: "Elevator not working",
+    status: "resolved",
+    date: "2024-01-08",
+    priority: "low",
+  },
+];
+
+// ================= TENANTS =================
+export const TENANTS = [
+  {
+    id: 1,
+    name: "Rahul Sharma",
+    property: "2BHK Vijay Nagar",
+    rent: 18000,
+    status: "paid",
+    dueDate: "2024-02-01",
+    since: "Jan 2023",
+    avatar: "RS",
+  },
+  {
+    id: 2,
+    name: "Priya Patel",
+    property: "3BHK Villa",
+    rent: 35000,
+    status: "pending",
+    dueDate: "2024-01-28",
+    since: "Mar 2023",
+    avatar: "PP",
+  },
+  {
+    id: 3,
+    name: "Amit Kumar",
+    property: "Studio Palasia",
+    rent: 12000,
+    status: "overdue",
+    dueDate: "2024-01-15",
+    since: "Jun 2023",
+    avatar: "AK",
+  },
+];
+
+// ================= NOTIFICATIONS =================
+export const NOTIFICATIONS = [
+  {
+    id: 1,
+    text: "Rent received from Rahul Sharma",
+    time: "2h ago",
+    type: "success",
+  },
+  {
+    id: 2,
+    text: "New booking request for Villa",
+    time: "5h ago",
+    type: "info",
+  },
+  {
+    id: 3,
+    text: "Complaint #2 updated to in-progress",
+    time: "1d ago",
+    type: "warning",
+  },
+];
