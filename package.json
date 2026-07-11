@@ -1,11 +1,18 @@
 {
+<<<<<<< HEAD
   "name": "rental-management-frontend",
   "private": true,
   "version": "1.0.0",
+=======
+  "name": "rms",
+  "private": true,
+  "version": "0.0.0",
+>>>>>>> 95bbaa0ca1e47e774003cfdd4fa45c2fbb58cf95
   "type": "module",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
+<<<<<<< HEAD
     "preview": "vite preview"
   },
   "dependencies": {
@@ -16,5 +23,24 @@
   "devDependencies": {
     "@vitejs/plugin-react": "^4.3.1",
     "vite": "^5.4.6"
+=======
+    "lint": "eslint .",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "react": "^19.2.6",
+    "react-dom": "^19.2.6"
+  },
+  "devDependencies": {
+    "@eslint/js": "^10.0.1",
+    "@types/react": "^19.2.14",
+    "@types/react-dom": "^19.2.3",
+    "@vitejs/plugin-react": "^6.0.1",
+    "eslint": "^10.3.0",
+    "eslint-plugin-react-hooks": "^7.1.1",
+    "eslint-plugin-react-refresh": "^0.5.2",
+    "globals": "^17.6.0",
+    "vite": "^8.0.12"
+>>>>>>> 95bbaa0ca1e47e774003cfdd4fa45c2fbb58cf95
   }
 }
