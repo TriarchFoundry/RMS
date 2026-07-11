@@ -1,0 +1,135 @@
+/* ============================================================
+   BASERA — Rental Management System
+   Design tokens: the "ledger & key" system
+   ============================================================ */
+
+:root {
+  /* Color */
+  --ink: #1B2434;          /* primary text / deep navy-ink */
+  --ink-soft: #4A5468;     /* secondary text */
+  --paper: #F3F4F1;        /* app background — cool stone, not cream */
+  --surface: #FFFFFF;      /* card surface */
+  --line: #DCDFD9;         /* hairline borders */
+  --navy: #1E2A44;         /* primary brand */
+  --navy-deep: #141D30;
+  --teal: #0F3D3E;         /* secondary brand */
+  --brass: #C9962C;        /* accent — key/brass */
+  --brass-soft: #E3A857;
+  --success: #2F6E4E;
+  --success-bg: #E5F1EA;
+  --warn: #A8551A;
+  --warn-bg: #FBECDD;
+  --danger: #A13A3A;
+  --danger-bg: #FBE9E9;
+
+  /* Type */
+  --font-display: 'Fraunces', 'Georgia', serif;
+  --font-body: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+  --font-mono: 'IBM Plex Mono', 'Courier New', monospace;
+
+  /* Layout */
+  --radius-sm: 6px;
+  --radius-md: 10px;
+  --radius-lg: 18px;
+  --shadow-sm: 0 1px 2px rgba(20, 29, 48, 0.06), 0 1px 1px rgba(20, 29, 48, 0.04);
+  --shadow-md: 0 8px 24px rgba(20, 29, 48, 0.10);
+  --shadow-lg: 0 20px 48px rgba(20, 29, 48, 0.16);
+  --max-width: 1180px;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  background: var(--paper);
+  color: var(--ink);
+  font-family: var(--font-body);
+  font-size: 16px;
+  line-height: 1.55;
+  -webkit-font-smoothing: antialiased;
+}
+
+h1, h2, h3, h4 {
+  font-family: var(--font-display);
+  color: var(--navy-deep);
+  margin: 0 0 0.5em 0;
+  line-height: 1.15;
+  font-weight: 600;
+  letter-spacing: -0.01em;
+}
+
+h1 { font-size: clamp(2rem, 3.2vw, 3.1rem); }
+h2 { font-size: clamp(1.5rem, 2.4vw, 2.1rem); }
+h3 { font-size: 1.3rem; }
+
+p { margin: 0 0 1em 0; color: var(--ink-soft); }
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+button {
+  font-family: inherit;
+}
+
+ul { margin: 0; padding: 0; list-style: none; }
+
+img { max-width: 100%; display: block; }
+
+.container {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: 0 24px;
+}
+
+.mono {
+  font-family: var(--font-mono);
+}
+
+.app-shell {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.app-main {
+  flex: 1;
+}
+
+/* Focus visibility, kept even where components override outlines */
+:focus-visible {
+  outline: 2px solid var(--brass);
+  outline-offset: 2px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation-duration: 0.001ms !important;
+    transition-duration: 0.001ms !important;
+  }
+}
+
+/* Section rhythm shared across pages */
+.section {
+  padding: 64px 0;
+}
+.section--tight {
+  padding: 40px 0;
+}
+.eyebrow {
+  font-family: var(--font-mono);
+  font-size: 0.72rem;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--brass);
+  font-weight: 500;
+  display: inline-block;
+  margin-bottom: 10px;
+}

@@ -1,0 +1,9 @@
+.search-bar {
+  display: grid;
+  grid-template-columns: 2fr 1.2fr 1fr;
+  gap: 12px;
+  margin: 20px 0 28px 0;
+}
+@media (max-width: 640px) {
+  .search-bar { grid-template-columns: 1fr; }
+}

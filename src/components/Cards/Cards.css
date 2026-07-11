@@ -1,0 +1,148 @@
+/* ---- Signature element: the key-tag card ----
+   Every listed room is drawn like a physical brass key tag: a die-cut
+   hole punched top-left, exactly where a keyring would sit. */
+
+.keytag-card {
+  position: relative;
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-radius: var(--radius-lg);
+  padding: 26px 24px 24px 24px;
+  box-shadow: var(--shadow-sm);
+  transition: transform 0.18s ease, box-shadow 0.18s ease;
+}
+.keytag-card:hover {
+  transform: translateY(-3px);
+  box-shadow: var(--shadow-md);
+}
+.keytag-card__hole {
+  position: absolute;
+  top: 20px;
+  left: 24px;
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  background: var(--paper);
+  border: 2px solid var(--line);
+}
+.keytag-card__body {
+  padding-left: 26px;
+}
+.keytag-card__top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+.keytag-card__id {
+  font-size: 0.72rem;
+  color: var(--ink-soft);
+  letter-spacing: 0.04em;
+}
+.keytag-card h3 {
+  font-size: 1.15rem;
+  margin-bottom: 4px;
+}
+.keytag-card__location {
+  font-size: 0.86rem;
+  color: var(--teal);
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+.keytag-card__desc {
+  font-size: 0.88rem;
+  margin-bottom: 16px;
+}
+.keytag-card__meta {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-top: 1px dashed var(--line);
+  padding-top: 14px;
+  margin-bottom: 16px;
+}
+.keytag-card__type {
+  font-size: 0.8rem;
+  color: var(--ink-soft);
+  background: var(--paper);
+  padding: 4px 10px;
+  border-radius: 999px;
+}
+.keytag-card__rent {
+  font-size: 1.05rem;
+  font-weight: 600;
+  color: var(--navy-deep);
+}
+.keytag-card__rent small {
+  font-weight: 400;
+  color: var(--ink-soft);
+  font-size: 0.7rem;
+}
+.keytag-card__cta { width: 100%; }
+
+.rooms-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 20px;
+}
+
+/* ---- Stat cards for dashboards ---- */
+.stat-card {
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-radius: var(--radius-md);
+  padding: 20px 22px;
+  border-left: 3px solid var(--navy);
+}
+.stat-card--accent { border-left-color: var(--brass); }
+.stat-card--danger { border-left-color: var(--danger); }
+.stat-card__label {
+  font-size: 0.78rem;
+  color: var(--ink-soft);
+  margin: 0 0 6px 0;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+.stat-card__value {
+  font-size: 1.6rem;
+  font-weight: 600;
+  color: var(--navy-deep);
+  margin: 0;
+}
+.stat-card__hint {
+  font-size: 0.8rem;
+  color: var(--ink-soft);
+  margin: 6px 0 0 0;
+}
+.stats-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 16px;
+  margin-bottom: 32px;
+}
+
+/* ---- Simple data table used in Payments / Maintenance / Documents ---- */
+.data-table {
+  width: 100%;
+  border-collapse: collapse;
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-radius: var(--radius-md);
+  overflow: hidden;
+}
+.data-table th, .data-table td {
+  text-align: left;
+  padding: 14px 18px;
+  font-size: 0.88rem;
+  border-bottom: 1px solid var(--line);
+}
+.data-table th {
+  font-family: var(--font-mono);
+  font-size: 0.7rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: var(--ink-soft);
+  background: var(--paper);
+}
+.data-table tr:last-child td { border-bottom: none; }
+.data-table td.mono { color: var(--navy-deep); }

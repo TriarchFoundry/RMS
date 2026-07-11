@@ -1,0 +1,43 @@
+.pay-now-card {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 24px;
+  flex-wrap: wrap;
+  background: var(--navy-deep);
+  color: #fff;
+  border-radius: var(--radius-lg);
+  padding: 28px 32px;
+  margin: 20px 0 40px 0;
+}
+.pay-now-card__label {
+  font-size: 0.78rem;
+  color: #99A0B5;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  margin-bottom: 6px;
+}
+.pay-now-card__amount {
+  font-size: 2rem;
+  font-weight: 600;
+  color: var(--brass-soft);
+  margin-bottom: 6px;
+}
+.pay-now-card__meta {
+  font-size: 0.82rem;
+  color: #99A0B5;
+  margin: 0;
+}
+.pay-now-card__action {
+  display: flex;
+  align-items: flex-end;
+  gap: 14px;
+}
+.pay-now-card__action .field { margin-bottom: 0; min-width: 160px; }
+.pay-now-card__action .field__label { color: #C9CEDA; }
+
+.payments-history-title { margin-top: 8px; }
+
+@media (max-width: 700px) {
+  .pay-now-card__action { flex-direction: column; align-items: stretch; width: 100%; }
+}

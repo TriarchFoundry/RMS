@@ -1,0 +1,33 @@
+.maintenance-form { margin-bottom: 32px; }
+.maintenance-list-title { margin-top: 8px; }
+.maintenance-list {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+.maintenance-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-radius: var(--radius-md);
+  padding: 16px 20px;
+  flex-wrap: wrap;
+}
+.maintenance-item__issue {
+  margin: 0 0 4px 0;
+  font-weight: 600;
+  color: var(--navy-deep);
+}
+.maintenance-item__meta {
+  margin: 0;
+  font-size: 0.78rem;
+  color: var(--ink-soft);
+}
+.maintenance-item__right {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
